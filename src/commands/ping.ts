@@ -1,3 +1,4 @@
+import { respond } from "@root/functions/respond";
 import { ICommand } from "@root/types/Command";
 
 const command: ICommand = {
@@ -6,8 +7,8 @@ const command: ICommand = {
     enabled: true,
     ephemeral: true,
 
-    async execute(message, args) {
-        message.channel.send(`Pong! ${message.client.ws.ping}ms`);
+    async execute(message) {
+        await respond(message.channel, `Pong! ${message.client.ws.ping}ms`, 3);
     },
 
     async interact(interaction) {
