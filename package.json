@@ -1,0 +1,27 @@
+{
+    "name": "firebird",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "",
+        "build": "tsc && tsc-alias"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@types/node": "^20.4.2",
+        "nodemon": "^3.0.1",
+        "tsc-alias": "^1.8.7",
+        "typescript": "^5.1.6"
+    },
+    "dependencies": {
+        "discord.js": "^14.11.0",
+        "dotenv": "^16.3.1",
+        "module-alias": "^2.2.3"
+    },
+    "_moduleAliases": {
+        "@root": "dist"
+    }
+}
